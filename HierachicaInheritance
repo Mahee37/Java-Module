@@ -31,3 +31,4 @@ public class Main {
         cat.meow(); // specific to Cat class
     }
 }
+In this example, the Animal class is the superclass, while Dog and Cat are subclasses that inherit from it. Both Dog and Cat classes have access to the eat() method inherited from the Animal class. Additionally, each subclass has its own unique methods (bark() in Dog and meow() in Cat) that are not present in the superclass.
