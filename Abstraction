@@ -1,0 +1,38 @@
+Abstraction in Java is a fundamental concept in object-oriented programming (OOP) that allows you to create complex systems by focusing on the essential features and hiding unnecessary details. It is one of the four main pillars of OOP, along with encapsulation, inheritance, and polymorphism.
+
+Abstraction is the process of representing the essential features of an object or a system while ignoring or hiding the implementation details. In Java, abstraction is achieved using abstract classes and interfaces.
+
+Abstract Classes:
+An abstract class in Java serves as a blueprint for other classes and cannot be instantiated itself. It may contain abstract methods, which are declared without an implementation, as well as regular methods with a concrete implementation. Subclasses that extend an abstract class must implement the abstract methods defined in the abstract class or be declared as abstract themselves.
+ #Java code for Abstraction:
+abstract class Animal {
+    abstract void sound(); // Abstract method
+    
+    void sleep() {
+        System.out.println("Zzzz...");
+    }
+}
+
+class Cat extends Animal {
+    void sound() {
+        System.out.println("Meow!");
+    }
+}
+
+class Dog extends Animal {
+    void sound() {
+        System.out.println("Woof!");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Animal cat = new Cat();
+        cat.sound(); // Output: Meow!
+        cat.sleep(); // Output: Zzzz...
+        
+        Animal dog = new Dog();
+        dog.sound(); // Output: Woof!
+        dog.sleep(); // Output: Zzzz...
+    }
+}
