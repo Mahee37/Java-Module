@@ -36,3 +36,8 @@ public class Main {
         dog.sleep(); // Output: Zzzz...
     }
 }
+
+In the above example, the Animal class is an abstract class with an abstract method sound(). The Cat and Dog classes extend the Animal class and provide their own implementation for the sound() method. The sleep() method in the Animal class has a concrete implementation and is inherited by the subclasses.
+
+
+
