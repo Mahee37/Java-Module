@@ -1,0 +1,54 @@
+Interfaces:
+An interface in Java is a collection of abstract methods that defines a contract for classes that implement it. It specifies the methods that the implementing classes must implement, but it does not provide any implementation itself. Interfaces allow you to achieve multiple inheritance-like behavior in Java.
+#java Code
+interface Shape {
+    double calculateArea();
+    double calculatePerimeter();
+}
+
+class Circle implements Shape {
+    private double radius;
+    
+    public Circle(double radius) {
+        this.radius = radius;
+    }
+    
+    public double calculateArea() {
+        return Math.PI * radius * radius;
+    }
+    
+    public double calculatePerimeter() {
+        return 2 * Math.PI * radius;
+    }
+}
+
+class Rectangle implements Shape {
+    private double length;
+    private double width;
+    
+    public Rectangle(double length, double width) {
+        this.length = length;
+        this.width = width;
+    }
+    
+    public double calculateArea() {
+        return length * width;
+    }
+    
+    public double calculatePerimeter() {
+        return 2 * (length + width);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Shape circle = new Circle(5.0);
+        System.out.println("Circle area: " + circle.calculateArea()); // Output: 78.53981633974483
+        System.out.println("Circle perimeter: " + circle.calculatePerimeter()); // Output: 31.41592653589793
+        
+        Shape rectangle = new Rectangle(4.0, 6.0);
+        System.out.println("Rectangle area: " + rectangle.calculateArea()); // Output: 24.0
+        System.out.println("Rectangle perimeter: " + rectangle.calculatePerimeter()); // Output: 20.0
+    }
+}
+``
