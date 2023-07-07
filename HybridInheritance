@@ -48,3 +48,10 @@ public class Main {
     babyKangaroo.sleep();
   }
 }
+In the example above, we have three classes: Animal, Jumpable, Kangaroo, and BabyKangaroo.
+
+The Animal class is a base class with a method eat(). The Jumpable interface declares a method jump(). The Kangaroo class inherits from the Animal class using single inheritance and implements the Jumpable interface. It overrides the jump() method.
+
+The BabyKangaroo class then inherits from the Kangaroo class using single inheritance. It has its own method display() and sleep(). Since it extends Kangaroo, it also inherits the eat() method from the Animal class and implements the jump() method from the Jumpable interface.
+
+In the main() method, we create an instance of BabyKangaroo and call its methods to demonstrate the usage of hybrid inheritance.
