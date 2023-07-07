@@ -1,0 +1,28 @@
+In Java, both pre-increment and post-increment are unary operators used to increase the value of a variable by 1. The difference lies in when the increment occurs relative to the expression being evaluated.
+
+Pre-increment:
+The pre-increment operator (++x) increments the value of the variable before the expression is evaluated. It increases the value of the variable and then returns the updated value.
+
+java
+Copy code
+int x = 5;
+int result = ++x;
+System.out.println(result); // Output: 6
+In this example, ++x increments the value of x by 1 before the expression is evaluated. The updated value of x (6) is then assigned to the variable result and printed to the console.
+
+
+
+
+
+POST INCREMENT
+Post-increment:
+The post-increment operator (x++) increments the value of the variable after the expression is evaluated. It returns the current value of the variable and then increases its value.
+
+java
+Copy code
+int x = 5;
+int result = x++;
+System.out.println(result); // Output: 5
+In this example, x++ returns the original value of x (5) and then increments its value by 1. The original value of x (5) is assigned to the variable result and printed to the console.
+
+So, the key difference between pre-increment and post-increment is when the increment operation takes place: pre-increment increments the value before the expression is evaluated, while post-increment increments the value after the expression is evaluated.
