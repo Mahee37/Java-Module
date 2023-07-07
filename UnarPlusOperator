@@ -1,0 +1,22 @@
+The unary plus operator + is another built-in operator in Java. It is a unary operator that doesn't change the sign of the operand; it is essentially a no-op.
+
+Here's an example that demonstrates the use of the unary plus operator in Java:
+
+java
+Copy code
+public class Example {
+    public static void main(String[] args) {
+        int x = 10;
+        int result = +x;
+
+        System.out.println("Original value: " + x);
+        System.out.println("Unary plus value: " + result);
+    }
+}
+In this code, the variable x is assigned the value 10. The unary plus operator + is then used to apply no operation to the value of x and store it in the variable result. Finally, the original value of x and the value after applying the unary plus operator result are printed to the console. The output will be:
+
+yaml
+Copy code
+Original value: 10
+Unary plus value: 10
+As you can see, the unary plus operator doesn't change the value of x; it remains 10.
