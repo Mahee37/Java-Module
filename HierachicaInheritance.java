@@ -1,6 +1,6 @@
-In Java, hierarchical inheritance is a type of inheritance where a class extends multiple subclasses, creating a hierarchy or tree-like structure. It allows a class to inherit properties and methods from a single superclass while acting as a superclass for multiple subclasses.
+// In Java, hierarchical inheritance is a type of inheritance where a class extends multiple subclasses, creating a hierarchy or tree-like structure. It allows a class to inherit properties and methods from a single superclass while acting as a superclass for multiple subclasses.
 
-Here's an example to illustrate hierarchical inheritance in Java:
+// Here's an example to illustrate hierarchical inheritance in Java:
 #java Code
 class Animal {
     public void eat() {
