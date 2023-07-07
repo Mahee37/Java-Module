@@ -1,0 +1,19 @@
+Java: Java is a high-level, object-oriented programming language developed by Sun Microsystems (now owned by Oracle). It is known for its platform independence, which means that Java programs can run on any device or operating system that has a Java Virtual Machine (JVM) installed.
+
+JVM (Java Virtual Machine): JVM is a virtual machine that executes Java bytecode. It provides the runtime environment for running Java applications. JVM interprets the bytecode and translates it into machine code that can be understood by the underlying operating system.
+
+JDK (Java Development Kit): JDK is a software development kit that provides tools and libraries necessary for developing Java applications. It includes the Java compiler (javac), runtime environment (JRE), and other tools for debugging and documentation.
+
+JRE (Java Runtime Environment): JRE is a subset of the JDK and contains only the runtime components required to run Java applications. It includes the JVM and core libraries necessary to execute Java programs.
+
+Object-Oriented Programming (OOP): OOP is a programming paradigm that organizes code into objects, which are instances of classes. It emphasizes encapsulation, inheritance, and polymorphism as fundamental concepts. Java is considered an object-oriented programming language.
+
+Class: A class is a blueprint or template for creating objects. It defines the attributes (variables) and behaviors (methods) that objects of that class will have.
+
+Object: An object is an instance of a class. It represents a specific entity or concept and can have its own state (values of attributes) and behavior (methods).
+
+Inheritance: Inheritance is a mechanism in which a class inherits the properties and methods of another class. It allows for code reuse and promotes the concept of "is-a" relationship between classes.
+
+Polymorphism: Polymorphism refers to the ability of objects of different classes to respond to the same message or method invocation. It allows for code flexibility and promotes the concept of "one interface, multiple implementations."
+
+Interface: An interface is a collection of abstract methods that define a contract. It specifies a set of methods that a class implementing the interface must provide. In Java, interfaces are used to achieve abstraction and define the behavior that a class should exhibit.
