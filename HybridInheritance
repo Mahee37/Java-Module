@@ -1,0 +1,50 @@
+Hybrid inheritance is a concept in object-oriented programming that allows a class to inherit properties and methods from multiple classes, combining both single and multiple inheritance. In hybrid inheritance, a class can inherit from multiple base classes using a combination of single inheritance and multiple inheritance.
+In single inheritance, a class can inherit from only one base class, whereas in multiple inheritance, a class can inherit from more than one base class. Hybrid inheritance combines these two types of inheritance to provide greater flexibility in creating class hierarchies.With hybrid inheritance, a derived class can inherit properties and methods from a single base class and also inherit from multiple base classes. This allows the derived class to reuse code from different classes and benefit from the features provided by each of the base classes.
+However, hybrid inheritance can be complex and can lead to certain issues such as the diamond problem, where ambiguity arises when a derived class inherits from two or more classes that have a common base class. To handle such situations, programming languages may provide mechanisms like virtual inheritance or method overriding to resolve conflicts.
+It's worth noting that not all programming languages support hybrid inheritance directly. Some languages, like C++, provide support for multiple inheritance, which can be used to achieve hybrid inheritance by carefully designing class hierarchies. Other languages, like Java, only support single inheritance, which limits the direct use of hybrid inheritance.
+#Java Code
+// Base class
+class Animal {
+  void eat() {
+    System.out.println("The animal is eating.");
+  }
+}
+
+// Another base class
+interface Jumpable {
+  void jump();
+}
+
+// Derived class inheriting from Animal and implementing Jumpable interface
+class Kangaroo extends Animal implements Jumpable {
+  void display() {
+    System.out.println("Kangaroo class");
+  }
+
+  @Override
+  public void jump() {
+    System.out.println("The kangaroo is jumping.");
+  }
+}
+
+// Another derived class inheriting from Kangaroo
+class BabyKangaroo extends Kangaroo {
+  void display() {
+    System.out.println("BabyKangaroo class");
+  }
+
+  void sleep() {
+    System.out.println("The baby kangaroo is sleeping.");
+  }
+}
+
+// Main class
+public class Main {
+  public static void main(String[] args) {
+    BabyKangaroo babyKangaroo = new BabyKangaroo();
+    babyKangaroo.display();
+    babyKangaroo.eat();
+    babyKangaroo.jump();
+    babyKangaroo.sleep();
+  }
+}
