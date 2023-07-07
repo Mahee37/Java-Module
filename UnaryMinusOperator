@@ -1,0 +1,22 @@
+The unary minus operator - is a built-in operator in Java used for negating a numeric value. It is a unary operator because it operates on a single operand.
+
+Here's an example that demonstrates the use of the unary minus operator in Java:
+
+java
+Copy code
+public class Example {
+    public static void main(String[] args) {
+        int x = 10;
+        int result = -x;
+
+        System.out.println("Original value: " + x);
+        System.out.println("Negated value: " + result);
+    }
+}
+In this code, the variable x is assigned the value 10. The unary minus operator - is then used to negate the value of x and store it in the variable result. Finally, the original value of x and the negated value result are printed to the console. The output will be:
+
+yaml
+Copy code
+Original value: 10
+Negated value: -10
+As you can see, the unary minus operator negates the value of x, changing it from 10 to -10.
